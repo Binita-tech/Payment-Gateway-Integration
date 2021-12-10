@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/about.css')}}">
+{% endblock %}
+
+{% block content %} 
+<div class="container-fluid about-main-div">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="row inner-div">
+                <div class="col-lg-7">
+                    <h4 class="heading4">Providing free education</h4>
+                    <p>
+                        We provide free education and resources to all the children who can't afford it.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="about-img" src="{{url_for('static', filename='img/edu.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row inner-div2">
+                <div class="col-lg-7">
+                    <h4 class="heading4">Helping elderly in old-age home</h4>
+                    <p>
+                        We provide all the necessities to the elderly in the old-age home.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="about-img" src="{{url_for('static', filename='img/old-people.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row inner-div3">
+                <div class="col-lg-7">
+                    <h4 class="heading4">Rebuilt natural disaster areas</h4>
+                    <p>
+                        We rebulit the places which are damaged by the natural disasters.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="about-img" src="{{url_for('static', filename='img/rebuild.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="row inner-div">
+                <div class="col-lg-7">
+                    <h4 class="heading4">Inhibiting hunger</h4>
+                    <p>
+                        We provide free food to the people who are malnourished and can't afford it.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="about-img" src="{{url_for('static', filename='img/hunger.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row inner-div2">
+                <div class="col-lg-7">
+                    <h4 class="heading4">Buying clothes</h4>
+                    <p>
+                        We give clothes to poor and neady people who are not economically well off.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="about-img" src="{{url_for('static', filename='img/clothes.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row inner-div3">
+                <div class="col-lg-7">
+                    <h4 class="heading4">Paying medical bills</h4>
+                    <p>
+                        We pay medical bills and provide free medicine along with proper medicare.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="about-img" src="{{url_for('static', filename='img/medical.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="row inner-div">
+                <div class="col-lg-7">
+                    <h4 class="heading4">Providing shelter</h4>
+                    <p>
+                        We provide shelter to homeless people along with all the other necessities.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="about-img" src="{{url_for('static', filename='img/home.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row inner-div2">
+                <div class="col-lg-7">
+                    <h4 class="heading4">cleaner environment</h4>
+                    <p>
+                        We set monthly drives to clean area in different parts of our country.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="about-img" src="{{url_for('static', filename='img/cleaning.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row inner-div3">
+                <div class="col-lg-7">
+                    <h4 class="heading4">Animal Shelters</h4>
+                    <p>
+                        We provide shelter, food and medical care to the rescued animals.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="about-img" src="{{url_for('static', filename='img/animal.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('inner-div').animate({left: 0});
+</script>
+{% endblock %}

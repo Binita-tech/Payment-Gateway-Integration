@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+<style>
+    
+
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid first-div">
+    <div class="row">
+        <div class="col-lg-7 col-md-6 img-div">
+            <img class="main-img" src="{{url_for('static', filename='img/donate.png')}}" alt="">
+        </div>
+        <div class="col-lg-5 col-md-6 text-div">
+            <div class="main-div">
+                <h1 class="heading">Don't Delay <br> Give Today!</h1>
+                <p class="desc">
+                    We enable citizens to cooperate voluntarily to promote social values ​​and civic goals, which are important to them. We promote local initiatives and problem solving. We work in various fields: environment, health, poverty alleviation, education, etc.                
+                </p>
+                <p class="ques">
+                    Together we can change this world for a better future. Are you ready to be a part of this journey with us ?
+                </p>
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_I5QAcPPzkG9vk0" async> </script> </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+        <div class="row" style="padding: 100px 0;">
+            <div class="col-lg-4 inner-div inline-photo show-on-scroll">
+                <div class="home-subdiv">
+                    <img src="{{url_for('static', filename='img/donate5.png')}}" style="height: 200px;width: 250px;" alt="">
+                    <h4 style="padding-top: 20px;">Let's help together</h4>
+                    <p>
+                        Your  charitable contributions can inspire loved ones to give to causes important to them, and can also lead to family efforts to support charities or charities that have special meaning to you as a group. If you want to make a one-off donation, aspire and set up a donation plan or find out how to donate. 
+
+                    </p>
+                </div> 
+            </div>
+            <div class="col-lg-4 inner-div inline-photo show-on-scroll">
+                <div class="home-subdiv">
+                    <img src="{{url_for('static', filename='img/donate4.png')}}" style="height: 200px;width: 250px;" alt="">
+                    <h4 style="padding-top: 20px;">Make a Donation</h4>
+                    <p>
+                        Donating to charity is an important mood booster. The knowledge that you are helping others gives you tremendous strength and, in turn, can make you feel happier and more fulfilled. Having the power to improve the lives of others is, for many, a privilege and something that comes with their own sense of duty.                    
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 inner-div inline-photo show-on-scroll">
+                <div class="home-subdiv">
+                    <img src="{{url_for('static', filename='img/donate.png')}}" style="height: 200px;width: 250px;" alt="">
+                    <h4 style="padding-top: 20px;">It's easy to help</h4>
+                    <p>
+                        Today there are numerous ways  to make that donation for your favorite purpose, from a checkbook to starting a foundation to entering your credit card number online. Your donation can come in all price ranges and packaged according to your preferences, your convenience, and the size of your wallet.                    
+                    </p>
+                </div>
+            </div>
+        </div>
+</div>
+<script src="{{url_for('static', filename='js/guide.js')}}"></script>
+{% endblock %}
